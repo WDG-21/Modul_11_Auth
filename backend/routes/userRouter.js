@@ -13,24 +13,23 @@ import {
 import { getAll, getOneByID, createOne, updateOneByID, deleteOneByID } from '../controllers/crudFactory.js';
 import User from '../models/UserModel.js';
 import validate from '../middlewares/validate.js';
-import UserSchema from '../schemas/UserSchema.js';
+import { UserSchema, LoginSchema } from '../schemas/UserSchema.js';
+import { login, userSignup } from '../controllers/authControllers.js';
+import authenticate from '../middlewares/authenticate.js';
+import hasPermissions from '../middlewares/hasPermissions.js';
 
 const userRouter = Router();
 
-// userRouter.get('/', getAllUsers);
-userRouter.get('/:id', getUserByID);
-// userRouter.post('/', createUser);
-// userRouter.put('/:id', updateUserByID);
-// userRouter.delete('/:id', deleteUserByID);
+userRouter.post('/login', validate(LoginSchema), login);
 
 userRouter.get('/', getAll(User));
-// userRouter.get('/:id', getOneByID(User));
-userRouter.post('/', validate(UserSchema), createOne(User));
-userRouter.put('/:id', updateOneByID(User));
-userRouter.delete('/:id', deleteOneByID(User));
+userRouter.get('/:id', getUserByID);
+userRouter.post('/', validate(UserSchema), userSignup);
+userRouter.put('/:id', authenticate, hasPermissions('self'), updateOneByID(User));
+userRouter.delete('/:id', authenticate, deleteOneByID(User));
 
-userRouter.post('/:userId/books/:bookId', addBookToReadingList);
-userRouter.put('/:userId/books/:bookId', updateBookStatus);
-userRouter.delete('/:userId/books/:bookId', deleteBookFromReadingList);
+userRouter.post('/:id/books/:bookId', authenticate, hasPermissions('self'), addBookToReadingList);
+userRouter.put('/:id/books/:bookId', authenticate, hasPermissions('self'), updateBookStatus);
+userRouter.delete('/:id/books/:bookId', authenticate, hasPermissions('self'), deleteBookFromReadingList);
 
 export default userRouter;

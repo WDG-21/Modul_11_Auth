@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import chalk from 'chalk';
+import cookieParser from 'cookie-parser';
 
 import dbInit from './db/index.js';
 
@@ -14,7 +15,7 @@ const app = express();
 
 const port = process.env.PORT || 8901;
 app.use(cors());
-app.use(express.json());
+app.use(express.json(), cookieParser());
 
 app.get('/', async (req, res) => {
   const dbResponse = await mongoose.connection.db.admin().ping();

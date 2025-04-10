@@ -29,7 +29,16 @@ const userSchema = new Schema({
     unique: [true, 'User already exists'],
     required: [true, 'Please provide an email address'],
   },
+  password: {
+    type: String,
+    select: false,
+  },
   readingList: [ReadingListEntry],
+  role: {
+    type: String,
+    enum: ['reader', 'publisher'],
+    default: 'reader',
+  },
 });
 
 const User = model('User', userSchema);

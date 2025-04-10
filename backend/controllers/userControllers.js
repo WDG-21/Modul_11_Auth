@@ -34,12 +34,12 @@ const deleteUserByID = async (req, res) => {
 };
 
 const addBookToReadingList = async (req, res) => {
-  const { userId, bookId } = req.params;
+  const { id, bookId } = req.params;
 
   const bookExists = await Book.exists({ _id: bookId });
   if (!bookExists) throw new ErrorResponse('Book not found', 404);
 
-  const user = await User.findById(userId);
+  const user = await User.findById(id);
   if (!user) throw new ErrorResponse('User not found', 404);
 
   if (user.readingList.find((book) => book.bookRefId.toString() === bookId)) {
@@ -54,14 +54,14 @@ const addBookToReadingList = async (req, res) => {
 };
 
 const updateBookStatus = async (req, res) => {
-  const { userId, bookId } = req.params;
+  const { id, bookId } = req.params;
   const { status } = req.body;
 
   const bookExists = await Book.exists({ _id: bookId });
   if (!bookExists) throw new ErrorResponse('Book not found', 404);
 
   const user = await User.findOneAndUpdate(
-    { _id: userId, 'readingList.bookRefId': bookId },
+    { _id: id, 'readingList.bookRefId': bookId },
     { $set: { 'readingList.$.status': status } },
     { new: true, runValidators: true }
   );
@@ -71,13 +71,13 @@ const updateBookStatus = async (req, res) => {
 };
 
 const deleteBookFromReadingList = async (req, res) => {
-  const { userId, bookId } = req.params;
+  const { id, bookId } = req.params;
 
   const bookExists = await Book.exists({ _id: bookId });
   if (!bookExists) throw new ErrorResponse('Book not found', 404);
 
   const user = await User.findByIdAndUpdate(
-    userId,
+    id,
     { $pull: { readingList: { bookRefId: bookId } } },
     { new: true, runValidators: true }
   );
