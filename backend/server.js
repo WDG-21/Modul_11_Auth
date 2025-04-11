@@ -14,7 +14,15 @@ await dbInit();
 const app = express();
 
 const port = process.env.PORT || 8901;
-app.use(cors());
+// app.use(cors());
+
+app.use(
+  cors({
+    credentials: true,
+    origin: ['http://localhost:5173', 'https://deployed-somewhere.com'],
+  })
+);
+
 app.use(express.json(), cookieParser());
 
 app.get('/', async (req, res) => {

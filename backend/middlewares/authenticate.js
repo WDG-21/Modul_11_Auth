@@ -3,13 +3,15 @@ import User from '../models/UserModel.js';
 import ErrorResponse from '../utils/ErrorResponse.js';
 
 const authenticate = async (req, res, next) => {
-  let token;
-  if (req.cookies) {
-    token = req.cookies.token;
-  } else {
-    const { authorization } = req.headers;
+  let { token } = req.cookies;
+
+  const { authorization } = req.headers;
+
+  if (authorization) {
     token = authorization.split(' ')[1];
   }
+
+  if (!token) throw new ErrorResponse('Not authenticated', 401);
 
   let id;
   try {

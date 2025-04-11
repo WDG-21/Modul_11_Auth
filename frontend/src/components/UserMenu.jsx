@@ -1,6 +1,9 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../contexts/AuthContext.jsx';
 
 const UserMenu = () => {
+  const { logout } = useContext(AuthContext);
   return (
     <>
       <search>
@@ -26,7 +29,7 @@ const UserMenu = () => {
               <Link to={'/reading-list'}>Reading List</Link>
             </li>
             <li>
-              <button onClick={() => alert('LOGOUT')}>Logout</button>
+              <button onClick={() => logout()}>Logout</button>
             </li>
           </ul>
         </div>

@@ -1,17 +1,22 @@
 import { Link } from 'react-router-dom';
-import { useState, useRef } from 'react';
+import { useState, useRef, useContext } from 'react';
+import { AuthContext } from '../contexts/AuthContext.jsx';
 
 const VisitorMenu = () => {
   const [pending, setPending] = useState(false);
   const [formState, setFormState] = useState({ email: '', password: '' });
   const dialogRef = useRef(null);
 
+  const { login } = useContext(AuthContext);
+
   const handleInput = (e) => setFormState((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setPending(true);
-    alert('LOGIN');
+    // alert('LOGIN');
+    await login(formState);
+    setPending(false);
   };
 
   return (

@@ -30,10 +30,10 @@ const userSignup = async (req, res) => {
   const hashedPW = await bcrypt.hash(password, salt);
 
   const user = await User.create({ ...req.body, password: hashedPW });
-
+  delete user.password;
   const token = createToken(user._id);
   setAuthCookie(res, token);
-  res.status(201).json({ message: 'User created successfully', token });
+  res.status(201).json({ message: 'User created successfully', token, user });
 };
 
 const login = async (req, res) => {
@@ -52,4 +52,16 @@ const login = async (req, res) => {
   res.json({ message: 'Logged in', token, data: user });
 };
 
-export { userSignup, login };
+const logout = (req, res) => {
+  res.clearCookie('token');
+  res.json({ message: 'Logout successful' });
+};
+
+const getMe = async (req, res) => {
+  const { _id } = req.user;
+
+  const data = await User.findById(_id);
+  res.json({ message: 'Logged in', data });
+};
+
+export { userSignup, login, logout, getMe };
