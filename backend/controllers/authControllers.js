@@ -40,6 +40,7 @@ const login = async (req, res) => {
   const { email, password } = req.body;
 
   const user = await User.findOne({ email }).select('+password').lean();
+  if (!user) throw new ErrorResponse('Incorrect credentials', 401);
 
   const match = await bcrypt.compare(password, user.password);
   if (!match) throw new ErrorResponse('Incorrect credentials', 401);

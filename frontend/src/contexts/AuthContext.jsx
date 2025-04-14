@@ -48,7 +48,7 @@ const AuthContextProvider = ({ children }) => {
       });
 
       const { token, message, data } = await res.json();
-      console.log(res);
+      console.log({ message, data });
       if (!res.ok) throw new Error(message);
       setUser(data);
       localStorage.setItem('token', token);
