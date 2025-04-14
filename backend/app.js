@@ -11,7 +11,7 @@ const whitelist = ['http://localhost:5173', 'https://wdg21-personal-library.netl
 const corsOptions = {
   credentials: true,
   origin: function (origin, callback) {
-    if (whitelist.indexOf(origin) !== -1) {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
       callback(null, true);
     } else {
       callback(new Error('Not allowed by CORS'));

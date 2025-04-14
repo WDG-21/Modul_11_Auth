@@ -10,7 +10,6 @@ const authenticate = async (req, res, next) => {
   if (authorization) {
     token = authorization.split(' ')[1];
   }
-
   if (!token) throw new ErrorResponse('Not authenticated', 401);
 
   let id;
