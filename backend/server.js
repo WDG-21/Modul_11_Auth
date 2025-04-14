@@ -19,7 +19,7 @@ const port = process.env.PORT || 8901;
 app.use(
   cors({
     credentials: true,
-    origin: ['http://localhost:5173', 'https://deployed-somewhere.com'],
+    origin: ['http://localhost:5173', 'https://wdg21-personal-library.netlify.app'],
   })
 );
 
