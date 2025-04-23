@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Alice's Adventures in Wonderland",
+    "author": "Lewis Carroll",
+    "description": "Alice's Adventures in Wonderland tells the story of a young girl named Alice who falls through a rabbit hole into a fantasy world populated by peculiar, anthropomorphic creatures. The tale plays with logic, giving the story lasting popularity with adults as well as children. It is considered to be one of the best examples of the literary nonsense genre.",
+    "year": 1865,
+    "isbn": "978-0-14-621050-9",
+    "genre": ["Children's Literature", "Fantasy", "Classic"]
+  },
+  {
+    "title": "The Little Prince",
+    "author": "Antoine de Saint-Exupéry",
+    "description": "The Little Prince is a novella that tells the story of a little boy who leaves the safety of his own tiny planet to travel the universe, learning the vagaries of adult behavior through a series of extraordinary encounters. Though ostensibly styled as a children's book, The Little Prince makes observations about life, adults, and human nature.",
+    "year": 1943,
+    "isbn": "978-0-15-601219-5",
+    "genre": ["Children's Literature", "Fable", "Novella", "Fantasy"]
+  },
+  {
+    "title": "Charlotte's Web",
+    "author": "E.B. White",
+    "description": "Charlotte's Web is a children's novel about a pig named Wilbur who is saved from being slaughtered by an intelligent spider named Charlotte. Charlotte weaves messages praising Wilbur in her web, convincing the farmer that he is special and should be saved. The novel explores themes of friendship, love, life and death.",
+    "year": 1952,
+    "isbn": "978-0-06-440055-3",
+    "genre": ["Children's Literature", "Fantasy", "Farm"]
+  },
+  {
+    "title": "The Wind in the Willows",
+    "author": "Kenneth Grahame",
+    "description": "The Wind in the Willows is a children's novel that alternates between two major narratives. The first chronicles the adventures of Mole, Rat, Badger, and Toad, four anthropomorphized animals living along a river in the English countryside. The second narrative focuses on Toad's obsession with motorcars, his imprisonment for stealing one, and his eventual escape and redemption.",
+    "year": 1908,
+    "isbn": "978-0-14-036917-0",
+    "genre": ["Children's Literature", "Fantasy", "Animal Fiction", "Classic"]
+  },
+  {
+    "title": "Winnie-the-Pooh",
+    "author": "A.A. Milne",
+    "description": "Winnie-the-Pooh, also called Pooh Bear, is a fictional anthropomorphic teddy bear created by English author A.A. Milne. The book follows the adventures of a teddy bear called Winnie-the-Pooh and his friends Christopher Robin, Piglet, Eeyore, Owl, Rabbit, Kanga, and Roo. The characters are based on toys owned by Milne's son, Christopher Robin Milne.",
+    "year": 1926,
+    "isbn": "978-0-525-44443-9",
+    "genre": ["Children's Literature", "Fantasy", "Animal Fiction"]
+  },
+  {
+    "title": "Peter Pan",
+    "author": "J.M. Barrie",
+    "description": "Peter Pan is the story of a mischievous boy who can fly and never grows up. Peter Pan spends his never-ending childhood having adventures on the mythical island of Neverland as the leader of the Lost Boys, interacting with fairies, pirates, mermaids, Native Americans, and occasionally ordinary children from the world outside Neverland.",
+    "year": 1911,
+    "isbn": "978-0-14-036673-5",
+    "genre": ["Children's Literature", "Fantasy", "Adventure"]
+  },
+  {
+    "title": "The Secret Garden",
+    "author": "Frances Hodgson Burnett",
+    "description": "The Secret Garden is a novel about Mary Lennox, a troubled, sickly, and unloved 10-year-old girl born in India to wealthy British parents. After her parents die from cholera, she is sent to Yorkshire, England to live with an uncle she has never met. There, she discovers a walled garden which has been locked for years, and she sets about restoring it with the help of her cousin and a local boy.",
+    "year": 1911,
+    "isbn": "978-0-06-440188-8",
+    "genre": ["Children's Literature", "Classic", "Coming-of-age"]
+  },
+  {
+    "title": "The Wonderful Wizard of Oz",
+    "author": "L. Frank Baum",
+    "description": "The Wonderful Wizard of Oz is an American children's novel written by author L. Frank Baum. The story chronicles the adventures of a young farm girl named Dorothy in the magical Land of Oz after she and her pet dog Toto are swept away from their Kansas home by a cyclone.",
+    "year": 1900,
+    "isbn": "978-0-06-293446-5",
+    "genre": ["Children's Literature", "Fantasy", "Adventure"]
+  },
+  {
+    "title": "Anne of Green Gables",
+    "author": "Lucy Maud Montgomery",
+    "description": "Anne of Green Gables recounts the adventures of Anne Shirley, an 11-year-old orphan girl who is mistakenly sent to Matthew and Marilla Cuthbert, a middle-aged brother and sister who had intended to adopt a boy to help them on their farm in Prince Edward Island. The novel follows Anne as she makes her way with the Cuthberts, in school, and within the town.",
+    "year": 1908,
+    "isbn": "978-0-553-21313-1",
+    "genre": ["Children's Literature", "Coming-of-age", "Classic"]
+  },
+  {
+    "title": "The Tale of Peter Rabbit",
+    "author": "Beatrix Potter",
+    "description": "The Tale of Peter Rabbit is a children's book written and illustrated by Beatrix Potter that follows mischievous and disobedient young Peter Rabbit as he is chased about the garden of Mr. McGregor. He escapes and returns home to his mother, who puts him to bed after dosing him with chamomile tea.",
+    "year": 1902,
+    "isbn": "978-0-7232-4770-8",
+    "genre": ["Children's Literature", "Picture Book", "Animal Fiction"]
+  },
+  {
+    "title": "Pippi Longstocking",
+    "author": "Astrid Lindgren",
+    "description": "Pippi Longstocking is a novel by Swedish author Astrid Lindgren, featuring one of her most popular characters. Pippi is an unconventional, superhuman, and mischievous red-haired girl who lives alone in her house Villa Villekulla with her monkey Mr. Nilsson and her horse, but no adults or supervision. She frequently mocks and challenges inadequate or silly adult attitudes, especially pompous and condescending ones.",
+    "year": 1945,
+    "isbn": "978-0-14-030950-3",
+    "genre": ["Children's Literature", "Fantasy", "Adventure", "Swedish Literature"]
+  },
+  {
+    "title": "The Brothers Lionheart",
+    "author": "Astrid Lindgren",
+    "description": "The Brothers Lionheart is a children's fantasy novel about two brothers who die and meet again in the afterlife land of Nangiyala. There, they encounter adventures, medieval surroundings, and a resistance movement fighting against the tyrant Tengil. The novel deals with themes of death, courage, resistance to tyranny, and brotherly love.",
+    "year": 1973,
+    "isbn": "978-0-14-030267-2",
+    "genre": ["Children's Literature", "Fantasy", "Adventure", "Swedish Literature"]
+  },
+  {
+    "title": "Ronia, the Robber's Daughter",
+    "author": "Astrid Lindgren",
+    "description": "Ronia, the Robber's Daughter is a children's fantasy book about Ronia, the daughter of a robber chief who lives in a castle in the woods with her father's band of robbers. The story follows Ronia's adventures in the forest and her friendship with Birk, the son of her father's rival. The book deals with themes of friendship, coming of age, and the conflict between being true to oneself and being loyal to one's family.",
+    "year": 1981,
+    "isbn": "978-0-14-031772-0",
+    "genre": ["Children's Literature", "Fantasy", "Adventure", "Swedish Literature"]
+  },
+  {
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "description": "The Hobbit is a children's fantasy novel that follows the quest of home-loving hobbit Bilbo Baggins to win a share of the treasure guarded by Smaug the dragon. Bilbo's journey takes him from his light-hearted, rural surroundings into more sinister territory, in the company of dwarves and the wizard Gandalf. The story is told in the form of an episodic quest, and most chapters introduce a specific creature or type of creature of Tolkien's geography of Middle-earth.",
+    "year": 1937,
+    "isbn": "978-0-618-00221-4",
+    "genre": ["Fantasy", "Children's Literature", "Adventure", "High Fantasy"]
+  },
+  {
+    "title": "The Fellowship of the Ring",
+    "author": "J.R.R. Tolkien",
+    "description": "The Fellowship of the Ring is the first of three volumes of the epic novel The Lord of the Rings. It follows the hobbit Frodo Baggins as he and the Fellowship embark on a quest to destroy the One Ring, and thus ensure the destruction of the Dark Lord Sauron. The volume consists of a prologue, in which the history of the Ring of Power is described, and three books, the first two set in Middle-earth, and the third in the western lands of Eriador.",
+    "year": 1954,
+    "isbn": "978-0-618-00222-1",
+    "genre": ["Fantasy", "High Fantasy", "Epic Fantasy", "Adventure"]
+  },
+  {
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "description": "Harry Potter and the Philosopher's Stone is a fantasy novel that introduces Harry Potter, a young wizard who discovers his magical heritage on his eleventh birthday, when he receives a letter of acceptance to Hogwarts School of Witchcraft and Wizardry. Harry makes close friends and a few enemies during his first year at the school, and with the help of his friends, he faces an attempted comeback by the dark wizard Lord Voldemort, who killed Harry's parents, but failed to kill Harry when he was just 15 months old.",
+    "year": 1997,
+    "isbn": "978-0-7475-3269-9",
+    "genre": ["Fantasy", "Children's Literature", "Coming-of-age", "Magic"]
+  },
+  {
+    "title": "Harry Potter and the Chamber of Secrets",
+    "author": "J.K. Rowling",
+    "description": "Harry Potter and the Chamber of Secrets is the second novel in the Harry Potter series. The plot follows Harry's second year at Hogwarts School of Witchcraft and Wizardry, during which a series of messages on the walls of the school's corridors warn that the 'Chamber of Secrets' has been opened and that the 'heir of Slytherin' would kill all pupils who do not come from all-magical families. These threats are found after attacks that leave residents of the school petrified.",
+    "year": 1998,
+    "isbn": "978-0-7475-3849-3",
+    "genre": ["Fantasy", "Children's Literature", "Coming-of-age", "Magic"]
+  },
+  {
+    "title": "The Silmarillion",
+    "author": "J.R.R. Tolkien",
+    "description": "The Silmarillion is a collection of mythopoeic stories by J. R. R. Tolkien, edited and published posthumously by his son Christopher Tolkien. The Silmarillion, along with J. R. R. Tolkien's other works, forms an extensive, though incomplete, narrative that describes the universe of Eä in which are found the lands of Valinor, Beleriand, Númenor, and Middle-earth, within which The Hobbit and The Lord of the Rings take place.",
+    "year": 1977,
+    "isbn": "978-0-618-12698-4",
+    "genre": ["Fantasy", "High Fantasy", "Mythology", "Epic"]
+  },
+  {
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "author": "J.K. Rowling",
+    "description": "Harry Potter and the Prisoner of Azkaban is the third novel in the Harry Potter series. The book follows Harry Potter, a young wizard, in his third year at Hogwarts School of Witchcraft and Wizardry. Along with friends Ronald Weasley and Hermione Granger, Harry investigates Sirius Black, an escaped prisoner from Azkaban, the wizard prison, believed to be one of Lord Voldemort's old allies.",
+    "year": 1999,
+    "isbn": "978-0-7475-4215-5",
+    "genre": ["Fantasy", "Children's Literature", "Coming-of-age", "Magic"]
+  },
+  {
+    "title": "Mio, My Son",
+    "author": "Astrid Lindgren",
+    "description": "Mio, My Son is a children's book about a boy named Bo Vilhelm Olsson, who dislikes his foster home. One day, he is transported to the magical Land of Faraway, where he learns that he is really Prince Mio. Along with his friend Pompoo, Mio goes on a quest to defeat the evil Knight Kato. The story deals with themes of loneliness, friendship, love, and the battle between good and evil.",
+    "year": 1954,
+    "isbn": "978-1-59017-125-3",
+    "genre": ["Children's Literature", "Fantasy", "Adventure", "Swedish Literature"]
+  }
+]

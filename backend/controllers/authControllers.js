@@ -31,6 +31,7 @@ const userSignup = async (req, res) => {
 
   const user = await User.create({ ...req.body, password: hashedPW });
   delete user.password;
+  // console.log(process.env.SECRET);
   const token = createToken(user._id);
   setAuthCookie(res, token);
   res.status(201).json({ message: 'User created successfully', token, user });

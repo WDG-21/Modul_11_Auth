@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "node --env-file=.env --watch server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "vitest",
+    "coverage": "vitest --coverage"
   },
   "keywords": [],
   "author": "",
@@ -23,5 +25,11 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.13.2",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^3.1.2",
+    "mongodb-memory-server": "^10.1.4",
+    "supertest": "^7.1.0",
+    "vitest": "^3.1.2"
   }
 }

@@ -1,8 +1,5 @@
-import express, { Router } from 'express';
 import chalk from 'chalk';
-
 import app from './app.js';
-
 import dbInit from './db/index.js';
 
 const port = process.env.PORT || 8901;

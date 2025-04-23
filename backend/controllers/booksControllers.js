@@ -5,7 +5,7 @@ const getAllBooks = async (req, res) => {
   const { page, limit, search } = req.query;
 
   const parsedPage = parseInt(page) || 1;
-  const parsedLimit = parseInt(limit) ?? 10;
+  const parsedLimit = parseInt(limit) || 10;
 
   const offset = (parsedPage - 1) * parsedLimit;
 
