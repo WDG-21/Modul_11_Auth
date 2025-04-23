@@ -1,4 +1,4 @@
-import { describe, test, expect, beforeAll, afterAll } from 'vitest';
+import { describe, test, expect, beforeAll } from 'vitest';
 import app from '../../app.js';
 import request from 'supertest';
 
